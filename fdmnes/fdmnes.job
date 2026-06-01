@@ -1,0 +1,21 @@
+#!/bin/bash -l
+#SBATCH --job-name=fdmnesNi
+#SBATCH --time=24:00:00
+#SBATCH --mem-per-cpu=5G
+#SBATCH --ntasks=20
+#SBATCH --ntasks-per-core=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=bdw
+#SBATCH --qos=job_cpu
+#SBATCH --output=slurm-%j.o
+#SBATCH --error=slurm-%j.e
+
+dpar=`date +%d-%m-%y`
+spacer='_NTASK_equal_to_'
+filename="$dpar$spacer$SLURM_NTASKS"
+HPC_WORKSPACE=minsim module load Workspace
+module load intel
+
+/storage/homefs/vs21q908/DEC2023/fdmnes/Ni5_corrected/fdmnes_linux64 
+

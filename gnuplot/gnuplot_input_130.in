@@ -1,0 +1,103 @@
+plot "Saponite-130-1.ener" u 2:6 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "Total energy, Ha" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "total_energy.svg"
+replot
+unset output
+
+plot "Saponite-130-1.ener" u 2:5 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "Potential energy, Ha" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "potential_energy.svg"
+replot
+unset output
+
+plot "Saponite-130-1.ener" u 2:4 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "Temperature, K" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "temperature.svg"
+replot
+unset output
+
+plot "Saponite-130-1.ener" u 2:3 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "Kinetic energy, Ha" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "kinetic_energy.svg"
+replot
+unset output
+ 
+plot "Saponite-130-1.bener" u 2:6 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "Volume, Å^{3}" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "volume.svg"
+replot
+unset output
+
+plot "cell.dat" u 1:2 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "a dimension, Å" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "a-axis.svg"
+replot
+unset output
+
+plot "cell.dat" u 1:3 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "b dimension, Å" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "b-axis.svg"
+replot
+unset output
+
+plot "cell.dat" u 1:4 w lp lw 3 lt 1 ps 1 pt 7 lc rgb "black"
+unset key
+set xlabel "Time, fs" font "Times New Roman, 24"
+set ylabel "c dimension, Å" font "Times New Roman, 24"
+set border linewidth 2
+set title "Lu-Ni, saponite-130" font "Times New Roman, 32"
+set mxtics 4
+set mytics 2
+set terminal svg size 1920,1080 enhanced font "Times New Roman, 14" background rgb 'white' 
+set output "c-axis.svg"
+replot
+unset output

@@ -1,0 +1,41 @@
+! Indata file for the fdmnes program
+! Calculation of the Nickel L2 and L3 edges in Nickel fcc.
+! Multiple scattering calculation, magnetic but without spin-orbit in the final state.
+! XMCD calculation
+
+ Comment
+   K edge of nickel
+
+ Filout
+   output_dir_fdmnes
+
+ Range
+ -60. 10. -20 0.2 20 2.0 100
+ !-100. 10. -30 0.1 20 2.0 180
+
+ !Green
+ SCF
+ R_self
+ 5.0
+ N_self
+ 300
+ P_self
+ 0.05
+ Delta_E_conv
+ 0.1
+ 
+ Quadrupole
+ Edge
+ K
+ 
+ Radius
+ 7.5
+
+ !Magnetism
+ Density
+ Z_absorber
+ 28
+! Crystal
+!     9.46 18.59278603  45.42238482  90. 90. 90.   ! a, b, c, alpha, beta, gamma
+molecule
+1 1 1  90. 90. 90.   ! a, b, c, alpha, beta, gamma
